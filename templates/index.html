@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts - Choose Cormorant Garamond or Cinzel -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Alternatively, use Cinzel -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <!-- Link to your custom CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    
+    <div class="navbar">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Rose de Luna Logo">
+      </div>
+
+      <body>
+        <!-- Page Title -->
+        <header>
+          <h1 class="title">Rose de Luna</h1>
+        </header>
+      </body>
+      
+      
+      <nav>
+        <ul>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-blur"></div>
+    <div class="hero-content">
+      <h1>Exquisite Jewelry for Every Occasion</h1>
+    </div>
+  </section>
+
+    <!-- Featured Products Section -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-container">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="{{ url_for('static', filename='images/product3.png') }}" alt="Elegant Pearl Studs">
+        <h3>Elegant Pearl Studs</h3>
+        <p>$25</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="{{ url_for('static', filename='images/product1.png') }}" alt="Petal Drop Earrings">
+        <h3>Petal Drop Earrings</h3>
+        <p>$25</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="{{ url_for('static', filename='images/product2.png') }}" alt="Elegance Cuff Bracelet">
+        <h3>Elegance Cuff Bracelet</h3>
+        <p>$25</p>
+      </div>
+    </div>
+
+    <!-- Shop All Button -->
+    <div class="shop-all">
+      <a href="#shop" class="btn">Shop all</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <!-- Left Image -->
+      <div class="about-image">
+        <img src="static/images/about.jpg" alt="Elegant Ring">
+      </div>
+
+      <!-- Right Content -->
+      <div class="about-content">
+        <h2>About<br>our company</h2>
+        <p>
+          Our jewelry embodies craftsmanship and elegance, creating timeless pieces that capture the essence of sophistication. 
+          With a commitment to excellence and a passion for detail, we bring you the finest curated collections, 
+          each piece a reflection of our dedication to quality.
+        </p>
+        <a href="#learn-more" class="btn">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Site Title -->
+      <div class="footer-title">
+        <h3>Rose de Luna</h3>
+      </div>
+
+      <!-- Explore Section -->
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div class="footer-links">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="mailto:info@rosedeluna.com">Email</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="footer-newsletter">
+        <p>Sign up with your email address to receive news and updates.</p>
+        <form>
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+    
+</body>
+</html>
+
